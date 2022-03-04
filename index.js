@@ -20,9 +20,9 @@ app.use(cookieSession({
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.get('/', (req, res) => {
-    res.send({hi: 'there'})
-})
+// app.get('/', (req, res) => {
+//     res.send({hi: 'there'})
+// })
 require('./routes/authRoutes')(app)
 require('./routes/billingRoutes')(app)
 
